@@ -1,0 +1,201 @@
+.wrapper {
+  margin: 0 auto;
+  width: 1024px;
+  background-color: #f3f7fa;
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 50px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header > img {
+  margin: 58px 0 43px 0;
+}
+
+/*----------------------- Main block styles-------------- */
+.content {
+  display: flex;
+  margin-left: 130px;
+}
+
+/*------------------Filter (Left block) styles------------------ */
+.filter {
+  width: 232px;
+  height: 381px;
+  background-color: #fff;
+  padding-top: 20px;
+}
+
+/*----------------------------- Transfer styles--------------------- */
+
+.transfer__head {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 19px;
+
+  letter-spacing: 0.5px;
+
+  color: #4a4a4a;
+  padding: 15px;
+}
+/* .transfer__count {
+  list-style: none;
+} */
+
+.transfer__item {
+  padding: 15px;
+}
+.transfer__item:hover {
+  background-color: #f1fcff;
+}
+
+/*--------------------Checkbox styles--------------------------------- */
+input[type='checkbox']:checked,
+input[type='checkbox']:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+input[type='checkbox']:checked + label,
+input[type='checkbox']:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+input[type='checkbox']:checked + label:before,
+input[type='checkbox']:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-radius: 3px;
+  width: 19px;
+  height: 19px;
+
+  background-color: #ffffff;
+  background: #f2fcff;
+  border: 1px solid #2196f3;
+  box-sizing: border-box;
+}
+
+input[type='checkbox']:checked + label:before,
+input[type='checkbox']:not(:checked) + label:before {
+  border-radius: 2px;
+}
+
+input[type='checkbox']:checked + label:after,
+input[type='checkbox']:not(:checked) + label:after {
+  content: '';
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+input[type='checkbox']:checked + label:after,
+input[type='checkbox']:not(:checked) + label:after {
+  left: 5px;
+  top: 6px;
+  width: 10px;
+  height: 5px;
+  border-radius: 3px;
+  border-left: 2px solid #3e9ce8;
+  border-bottom: 2px solid #3e9ce8;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-border-radius: (-45deg);
+  -moz-border-radius: (-45deg);
+  -ms-border-radius: (-45deg);
+  -o-border-radius: (-45deg);
+  background-color: #f2fcff;
+  box-sizing: border-box;
+}
+
+input[type='checkbox']:not(:checked) + label:after {
+  opacity: 0;
+}
+
+input[type='checkbox']:checked + label:after {
+  opacity: 1;
+}
+
+/* ---------------Destination (Right block) styles---------------------- */
+.destination {
+  margin-left: 20px;
+}
+.route {
+  display: flex;
+  width: 566px;
+  height: 161px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.button {
+  margin: 80px 20px 25px 20px;
+  width: 160px;
+  height: 56px;
+  background-color: #ff6d00;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1), 0px 1px 0px #d64d08;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+}
+.button:hover {
+  background-color: #ff8124;
+}
+
+.cities {
+  display: flex;
+  margin-left: 25px;
+  padding-top: 26px;
+}
+.sum__transfer {
+  font-size: 10px;
+  line-height: 12px;
+  width: 125px;
+  text-align: center;
+
+  color: #8b9497;
+}
+.to {
+  text-align: right;
+  /* margin-left: 12px; */
+}
+
+.from__time,
+.to__time {
+  font-size: 32px;
+  line-height: 26px;
+  color: #4a4a4a;
+}
+.from__city,
+.to__city {
+  margin: 10px 0px 0px 0px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #4a4a4a;
+}
+
+.from__date,
+.to__date {
+  font-size: 12px;
+  line-height: 18px;
+  color: #8b9497;
+}
